@@ -17,7 +17,7 @@ public class BaseDao { // TODO 2a: convertir en clase abstracta
     private static final String USER = "root";
     private static final String PASS = "root"; // cambiar por la contraseña de su MySQL
 
-    protected Connection getConnection() throws SQLException {
+    public Connection getConnection() throws SQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
